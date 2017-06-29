@@ -1,0 +1,28 @@
+<style>
+    .placeholder-custom{
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        display: inline;
+        font-size: 30px;
+        background: none;
+        vertical-align: middle;
+        border: solid;
+    }
+
+    .image{
+        height: 53px;
+        width: 53px;
+        vertical-align: middle;
+        border: solid;
+        background: none;
+    }
+
+</style>
+
+<div >
+    <input type="text" name="topic-name" placeholder="*" class="placeholder-custom" id="placeholder">
+    <img src="symbols/tick.png" class="image" onmouseenter="changecolor(this, 'tickhover')" onmouseleave="changecolor(this, 'tick')"  onclick="setvalue(this.parentNode.children[0].value, this.parentNode)"  >
+</div>

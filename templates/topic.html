@@ -1,0 +1,22 @@
+<div>
+    <div id="topic" class="largebox">
+        <font class="topic-heading">Topic Name Added</font>
+
+        <div align="right" style="display: inline; float: right" onclick="addAddsubtopic(this.parentElement.parentElement)">
+            <img src="symbols/addtopic.png" class="add" onmouseenter="changecolor(this, 'hover')" onmouseleave="changecolor(this, 'addtopic')">
+        </div>
+
+        <div align="right" style="display: inline; float: right">
+            <div class="dropdown">
+                <img src="symbols/settingstopic.png" class="settings" onmouseenter="changecolor(this, 'settingshover')" onmouseleave="changecolor(this, 'settingstopic')">
+                <div class="dropdown-content">
+                    <p onclick="change(this.parentElement.parentElement.parentElement.parentElement, 'Change Topic')">Edit</p>
+                    <p onclick="del(this.parentElement.parentElement.parentElement.parentElement.parentElement)">Delete</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="child">
+
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div>
+    <div class="largebox" id="subtopic">
+        <font class="subtopic-heading">Subtopic</font>
+
+        <div align="right" style="display: inline; float: right" onclick="addAddsubsubtopic(this.parentElement.parentElement)">
+            <img src="symbols/addsubtopic.png" class="add" onmouseenter="changecolor(this, 'hover')" onmouseleave="changecolor(this, 'addsubtopic')">
+        </div>
+
+        <div align="right" style="display: inline; float: right">
+            <div class="dropdown">
+                <img src="symbols/settingssubtopic.png" class="settings" onmouseenter="changecolor(this, 'settingshover')" onmouseleave="changecolor(this, 'settingssubtopic')">
+                <div class="dropdown-content">
+                    <p onclick="change(this.parentElement.parentElement.parentElement.parentElement, 'Change Sub-Topic')">Edit</p>
+                    <p onclick="del(this.parentElement.parentElement.parentElement.parentElement.parentElement)">Delete</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="child">
+
+    </div>
+</div>
